@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rhythm Music</title>
+        <style>
+            .contact-section {
+                padding: 20px;
+                margin: 20px;
+                background-color: #000000;
+                opacity: 0.9;
+                border-radius: 10px;
+                color: #ffffff;
+            }
+            .contact-section h2 {
+                text-align: center;
+            }
+            .contact-form {
+                display: flex;
+                flex-direction: column;
+                max-width: 600px;
+                margin: auto;
+            }
+            .contact-form label {
+                margin: 10px 0 5px;
+            }
+            .contact-form input, .contact-form textarea {
+                padding: 10px;
+                margin: 5px 0 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .contact-form button {
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: #333;
+                color: white;
+                cursor: pointer;
+            }
+            .contact-form button:hover {
+                background-color: #555;
+            }
+        </style>
+        <link rel="stylesheet" href="rythmmusic.css">
+    </head>
+    <body style="background-color: beige;">
+        <ul>
+            <li><a class="logo-image"><img src="webpics/logo.jpg" height="46"></a></li>
+            <li><a href="loggedhome.php">Home</a></li>
+            <li class="dropdown">
+                <a href="" class="dropbtn">Instruments</a>
+                <div class="dropdown-content">
+                    <a href="loggedcategory.php?category=Guitar">Guitar</a>
+                    <a href="loggedcategory.php?category=Piano">Piano</a>
+                    <a href="loggedcategory.php?category=Drum">Drum</a>
+                    <a href="loggedcategory.php?category=Tabla">Tabla</a>
+                    <a href="loggedcategory.php?category=Oragan">Organ</a>
+                    <a href="loggedcategory.php?category=Flute">Flute</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Accessories</a>
+                <div class="dropdown-content">
+                    <a href="loggedcategory.php?category=Sticks">Sticks</a>
+                    <a href="loggedcategory.php?category=Strings">Strings</a>
+                    <a href="loggedcategory.php?category=Picks">Picks</a>
+                    <a href="loggedcategory.php?category=Seats">Seats</a>
+                    <a href="loggedcategory.php?category=Amplifier">Amplifier</a>
+                    <a href="loggedcategory.php?category=Mixer">Mixer</a>
+                </div>    
+            </li>
+            <li><a href="loggedaboutus.html">About us</a></li>
+            <li><a class="active" href="#home">Contact</a></li>
+            <li class="login"><a href="profile.php">Profile</a></li>
+            <li class="cart"><a href="#cart">Cart</a></li>
+            <li class="search-container">
+            <form action="loggedsearch.php" method="GET">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">Search</button>
+            </form>
+            </li>
+        </ul>
+        <br>
+
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <form class="contact-form" action="contact_form_handler.php" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <br>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-part">
+                    <h3>About Us</h3>
+                    <p>Discover Rhythm Music Center for quality instruments, expert staff, repair services, and accessories to support your musical journey!</p>
+                </div>
+                <div class="footer-part">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li style="padding-left: 25%;"><a href=""><img src="webpics/dribble.png" width="30px" height="30px"></a></li>
+                        <li><a href=""><img src="webpics/instagram.png" width="30px" height="30px"></a></li>
+                        <li><a href=""><img src="webpics/telegram.png" width="30px" height="30px"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-part">
+                    <h3>Contact</h3>
+                    <p><img src="webpics/pngwing.com (1).png" width="20px" height="20px" alt="Mobile Icon" style="vertical-align: middle; margin-top: -3px;"> rhythmmusic@gmail.com</p>
+                    <p><img src="webpics/pngwing.com.png" width="20px" height="20px" alt="Mobile Icon" style="vertical-align: middle; margin-top: -3px;"> 077 660 8899</p>
+                </div>
+            </div>
+        </footer>
